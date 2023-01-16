@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+	<head>
+		<title> Dadgar homepage</title>
+		<meta charset="UTF-8" />
+		<meta name= "description" content=" This website is about dadgar 
+		law firm and all about this firm does" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<style>
+				body,html {
+					padding: 0;
+					margin: 0;
+				}
+				a {
+					color: #222222;
+				}
+
+				body {
+					background: #fefefe;
+					font-family: sans-serif;
+					padding-top: 60px;
+									}
+
+				#main-header{
+					background: whitesmoke;
+					padding: 8px;
+					box-shadow: 1px 1px 1px 1px #e1e1e1;
+					position: fixed;
+					top: 0;
+					right: 0;
+					left: 0;
+					z-index: 5;
+
+				}
+				#main-header h1 {
+					font-size: 24px;
+					padding: 6px;
+					padding-top: 10px;
+					margin: 0;
+					margin-right: 20px;
+					float: left;
+
+				}
+				#main-header nav ul {
+					list-style: none;
+					padding: 0;
+					margin: 0;
+					
+				}
+				#main-header nav ul li {
+					float: left;
+					margin-left: 20px;
+					padding-top: 8px;
+					
+				}
+				#main-header nav ul li a:hover {
+					background: #f7f7f7;
+					border: 1px solid #e1e1e1;
+					border-radius: 8px;
+					color: black;
+				}
+				.clearfix:after {
+					visibility: hidden;
+					display: block;
+					font-size: 0;
+					content: "";
+					clear: both;
+					height: 0;
+				}	
+				#main-header nav ul li a {
+					padding: 10px;
+					border: 1px solid transparent;
+					display: block;
+					text-decoration: none;
+				}
+				#featured-article {
+					background: lightgray;
+
+				}
+				#featured-article h2, #featured-article h3{
+					margin: 5px 0;
+				}
+				#featured-article figure{
+					float: left;
+					margin: 0 20px;
+
+				}
+				#featured-article img{
+			
+					width: 150px;
+					height: 150px;
+					padding-top: 15px;
+
+				
+				}
+
+
+				.post-list time {
+					color: #888;
+					padding-bottom: 10px;
+					display: block;
+
+				}
+
+				
+				.container{
+					width: 960px;
+					margin: 0 auto;
+
+
+				}
+				.card{
+					background: #f7f7f7;
+					padding: 15px;
+					border-radius: 20px;
+					border: 1px solid #e1e1e1;
+					margin-top: 20px;
+		
+				}
+				.post-list{
+					list-style: none;
+					padding: 0;
+					margin: 0;
+					overflow: hidden;
+					
+				}
+				.post-list figure figcaption {
+					text-align: center;
+					font-weight: bold;
+				}
+								
+				.post-list article{
+					position: relative;
+					padding-left: 200px ;
+				}
+
+				.post-list figure img {
+					max-width: 100%;
+					border-radius: 8px;
+				}
+
+
+				.post-list article footer{
+					position: absolute;
+					left: 0;
+					top: 5px;
+					width: 200px;
+				}
+				.post-list article {
+					border-bottom: 1px solid green;
+					margin-bottom: 25px;
+					padding-bottom: 25px;
+				}
+				.dastan .post-list article:last-child {
+					border-bottom: 0;
+					margin-bottom: 0;
+					padding-bottom: 0;
+				}
+				#footer-links {
+					margin-top: 40px;
+					background: #fff;
+					border-top: 1px solid #e1e1e1;
+					border-bottom: 1px solid #e1e1e1;
+					padding: 20px 0;
+
+				}
+				#footer-links .column{
+					width: 50%;
+					float: left;
+
+				}
+				.column1 {
+					padding-left: 20px;
+				}
+				#footer-links ul {
+					padding: 0;
+					margin: 0;
+					list-style: none;
+				}
+				#footer-links ul li {
+					padding: 5px 10px;
+
+				}
+				#footer-links h3 {
+					margin: 5px 10px;
+					padding-bottom: 10px;
+					border-bottom: 1px solid #e1e1e1;
+
+				}
+				#footer-links a{
+					color: #111;
+					text-decoration: none;
+				}
+				body > footer {
+					
+					padding: 20px 0;
+				}
+				body > footer span {
+					float: left;
+					margin-right: 20px;
+
+				}
+				body > footer ul {
+					padding: 0;
+					margin: 0;
+					list-style: none;
+
+				}
+				body > footer ul li {
+					float: left;
+					margin-right: 10px;
+				}
+				body > footer ul li a {
+					text-decoration: none;
+
+				}
+				body > footer ul li::after{
+					content:"|";
+					margin-left: 10px;
+					color: green;
+				}
+				body > footer ul li:last-child::after {
+					content: "";
+				}
+
+					
+      			form div {
+      				margin-bottom: 10px;
+      			}
+
+      			form label {
+      				display: block;
+      				margin-bottom: 5px;
+      			}
+      			form input, form button, form textarea {
+      				border: 1px solid #d1d1d1;
+      				border-radius: 5px;
+      				padding: 7px;
+      				background: #f7f7f7;
+      			}
+      			form input:hover, form button:hover, form textarea:hover {
+      				background: blue;
+      			}
+      			form fieldset {
+      				padding: 10px;
+      				margin-bottom: 20px;
+      				border: 3px solid #e1e1e1;
+      			}
+      			form legend {
+      				font-weight: bold;
+      				
+      			}
+				.light{
+					width: 200px;
+				}
+				.light-container {
+					text-align: center;
+				}
+
+			</style>
+	</head>	
+	<body>
+		<header id="main-header" class="clearfix">
+			<div class="container">
+			<h1> Dadgar home page </h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="Blog.html">blog</a></li>
+						<li><a href="About.html">About Us</a></li>
+					</ul>
+				</nav>
+			</div> 
+		</header>
+
+		<div class="container">  
+				<aside id="featured-article" class="clearfix card">
+					<figure>
+						<img src="image/mehdi.jpeg" alt="its something" />
+					</figure>
+					<header>
+						<h2> featured Article </h2>
+						<h3><a href="featured.html">dadgar logo</a></h3>
+					</header>
+					<p> In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available
+					In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available</p>
+				</aside>
+					<div class="card light-container">
+						<form style="margin-bottom: 10px;">
+							<button onclick="switchLight(true); return false; ">turn on light</button>
+							<button onclick="switchLight(false); return false; ">turn off light</button>
+							<button onclick="switchLight(); return false; ">toggle light</button>
+						</form>
+
+						<img id="light-Bulb" class="light" src="image/lamp on.PNG" alt="light" alt="light" />
+						
+
+					</div>
+
+			<main class="card">
+				<ol class="post-list">
+					<article>
+						<header>
+							<footer>
+								<time datetime="2017-06-12T23:00+3:30"> june 12, 2017 - 11:00 pm </time>
+								<address>
+									by <a href="medi.html"> mehdi khan dude </a>
+								</address>
+							</footer>
+							<h2><a href="post1.html"> Lorem ipsum is a placeholder text commonly used to demonstrate
+							the visual form of a document or a typeface without relying on meaningful content. 
+							Lorem ipsum may be used as a place </a></h2>
+						</header>
+						<div>
+							<p>blishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available
+							In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder blishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available
+							In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder blishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available
+							In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder blishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available
+							In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder </p>
+						</div>
+
+					</article>
+
+				</ol>
+
+					<ol class="post-list">
+					<article>
+						<header>
+							<footer>
+								<time datetime="2017-06-12T23:00+3:30"> june 12, 2017 - 11:00 pm </time>
+								<address>
+									by <a href="medi.html"> mehdi khan dude </a>
+								</address>
+							</footer>
+							<h2><a href="post2.html"> Lorem ipsum is a placeholder text commonly used to demonstrate
+							the visual form of a document or a typeface without relying on meaningful content. 
+							Lorem ipsum may be used as a place </a></h2>
+						</header>
+						<div>
+							<p>blishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available
+							In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder blishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available
+							In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder blishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available
+							In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder blishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available
+							In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder </p>
+							<figure>
+								<img src="image/dadgarlogo.png" alt="baby mehdi" />
+								<figcaption> this is a image of mehdi khan in toofoliat time</figcaption>
+							</figure>
+							<p> In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder blishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available
+							In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder blishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available
+							In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder blishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available
+							In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a </p>
+						</div>
+
+
+					</article>
+
+				</ol>
+
+						<ol class="dastan" class="post-list">
+					<article>
+						<header>
+							<footer>
+								<time datetime="2017-06-12T23:00+3:30"> june 12, 2017 - 11:00 pm </time>
+								<address>
+									by <a href="medi.html"> mehdi khan dude </a>
+								</address>
+							</footer>
+							<h2><a href="post3.html"> Lorem ipsum is a placeholder text commonly used to demonstrate
+							the visual form of a document or a typeface without relying on meaningful content. 
+							Lorem ipsum may be used as a place </a></h2>
+						</header>
+						<div>
+							<p>blishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available
+							In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder blishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available
+							In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder blishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available
+							In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder blishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available
+							In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder </p>
+						</div>
+						<details>
+							<summary> Click here to see more! </summary>
+								<p> is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. </p>
+						</details>
+
+					</article>
+
+				</ol>
+
+
+			</main>
+		</div>
+
+		<div class="container">
+			<section id="contact-form" class="card">
+				<form method="get" action="index.html">	
+					<fieldset>
+						<legend>Basic Info</legend>
+					<label>username</label> 
+					<input style="border-radius: 5em;" type="text" name="username" placeholder="type here" />
+
+						<div>
+							<label>password</label>
+							<input style="border-radius: 5em;" type="password" name="password" placeholder="ur password" />
+						</div>
+						<div>
+							<label>
+								<input type="radio" name="gender" value="m"  /> male
+							</label>
+							<label>
+								<input type="radio" name="gender" value="f"  /> female
+							</label>
+						</div>
+						<div>
+							<label>city</label>
+							<select name="city" id="city">
+								<option value="tehran">tehran</option>
+								<option value="shiraz">shiraz</option>
+								<option value="karaj">karaj</option>
+								<option value="shomal">shomal</option>
+								<option value="ghazvin">ghazvin</option>
+							</select>
+						</div>
+
+						<div>
+							<label>Bio</label>
+							<textarea name="bio" id="bio" cols="30" rows="5">
+							</textarea>
+						</div>
+						<div>
+							<label>Photo</label>
+							<input type="file" name="Photo" />
+						</div>
+
+						<div>
+							<input type="submit" value="right now" />
+						</div>
+					</form>
+					</fieldset>
+			</section>
+		</div>
+			<section id="footer-links" class="clearfix">
+				<div class="container">
+						<div class="column">
+							<h3>Brows</h3>
+							<ul>
+								<li><a href="#"> gn, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder blishing and graphic design, Lorem ipsum is a placeholder text common </a></li>
+								<li><a href="#"> gn, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder blishing and graphic design, Lorem ipsum is a placeholder text common </a></li>
+								<li><a href="#"> gn, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder blishing and graphic design, Lorem ipsum is a placeholder text common </a></li>
+							</ul>
+						</div class="column">
+						<div class="column 1">
+							<h3>Social Media</h3>
+							<ul>
+								<li><a href="https://www.instagram.com/soheila_nanva/">Instagram</li>
+								<li><a href="https://www.instagram.com/soheila_nanva/">Twitter</li>
+								<li><a href="https://www.instagram.com/soheila_nanva/">Telegram</li>	
+							</ul>	
+						</div>
+				</div>		
+			</section>
+			
+			<footer class="clearfix">
+				<div class="container">
+					<span>&copy mehdi khan limbo 2022</span>
+					<ul>
+						<li><a href="privacy.html">privacy policy</a></li>
+						<li><a href="Service.html">Terms of service</a></li>
+						<li><a href="mailto:mahdilotfi89@gmail.com">Support</a></li>
+					</ul>
+				</div>
+			</footer>
+
+			<script>
+				function switchLight(value) {
+					var lightBulb = document.getElementById('light-Bulb')
+					if (typeof value == 'undefined') {
+						if (lightBulb.src.indexOf('lamp on') == -1) {
+							value = true	
+						} else {
+							value = false
+						}
+					}
+
+					if (value == true) {
+						lightBulb.src = 'image/lamp on.png'
+						document.querySelector('body').style = ''
+					} else {
+						lightBulb.src = 'image/lamp off.png'
+						document.querySelector('body').style = 'background: #666666'
+					}
+				}
+			</script>
+		
+	</body>
+</html>
+
